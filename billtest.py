@@ -17,9 +17,9 @@ soup = BeautifulSoup(html, 'html.parser')
 
 tables = soup.find_all('table', {'id': 'Table2'})
 
-for table in tables:
+for Table2 in tables:
     
-    rows = table.find_all('tr')
+    rows = Table2.find_all('tr')
 
     for row in rows:
         output_row = []
